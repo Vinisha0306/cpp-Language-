@@ -72,6 +72,7 @@ class supermarket
         }   
         
     }
+
 };
 
 int main()
