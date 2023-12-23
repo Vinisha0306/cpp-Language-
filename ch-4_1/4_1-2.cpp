@@ -1,5 +1,5 @@
-// C + 273.15
-// (9/5)C + 32
+// 
+// 
 #include<iostream>
 using namespace std;
 
@@ -7,7 +7,7 @@ class p
 {
     protected:
 
-    float C;
+    float C,f,k;
 
     public:
 
@@ -18,17 +18,35 @@ class p
     }
 };
 
-class Q 
+class Q : public p
 {
-    protected:
+    public:
 
     void Fehrenheit()
     {
-
+        f=(9/5)*C + 32;
+        cout << "Celsius to Fehrenheit: " << f << endl;
     }
-}
+};
+
+class R : public Q
+{
+    public:
+
+    void kelvin()
+    {
+        k=(5/9)*(f+459.67);
+        cout << "Fehrenhrit to Kelvin: " << k << endl;
+    }
+};
 
 int main()
 {
+    R r1;
+
+    r1.enter();
+    r1.Fehrenheit();
+    r1.kelvin();
+
     return 0;
 }

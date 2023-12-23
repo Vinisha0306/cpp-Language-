@@ -4,7 +4,7 @@ using namespace std ;
 
 class supermarket
 {
-    int number,quantity,discount,a=0,b=0,c=a,d=b;
+    int number,quantity,discount,a=0,b=0,c=a,d=b,n;
     double price;
     char name[20],idv[20],pass[10];
     
@@ -64,7 +64,7 @@ class supermarket
             if(a==11 && b==6)
         {
           
-            cout << "|\t" << this->number << "\t|\t" << this->name << "\t|\t"  << this->price << "\t|\t"  << this->quantity << "\t|\t"  << this->discount << "\t| ";
+            cout << "|\t" << this->number << "\t|\t" << this->name << "\t|\t"  << this->price << "\t|\t"  << this->quantity << "\t|\t"  << this->discount << "\t| " << endl ;
         } 
         else
         {
@@ -73,6 +73,16 @@ class supermarket
         
     }
 
+    void user_input()
+    {
+        cout << "Enter item number:";
+        cin >> n;
+
+        if(n==number)
+        {
+            cout << "|\t" << this->number << "\t|\t" << this->name << "\t|\t"  << this->price << "\t|\t"  << this->quantity << "\t|\t"  << this->discount << "\t| " << endl << endl;
+        }
+    }
 };
 
 int main()
@@ -84,7 +94,7 @@ int main()
     
         s1.set_data();
         s1.output(id,password);
-    
+        s1.user_input();
     
     return 0;
 }

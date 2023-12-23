@@ -3,9 +3,9 @@ using namespace std;
 
 class A
 {
-    protected:
+    public:
 
-    int a;
+    int a=11;
 
 };
 
@@ -13,26 +13,27 @@ class B : public A
 {
     protected:
 
-    int b;
+    int b=43;
 };
 
 class C : public A
 {
     protected:
 
-    int c;
+    int c=23;
 };
+
 class D : public B,public C
 {
     protected:
 
-    int d;
+    int d=42;
 
     public :
-
+    
     void sum()
     {
-        cout << "11 + 43 + 23 + 42 = " << 11+43+23+42;
+        cout << "11 + 43 + 23 + 42 = " << a+b+c+d;
     }
 };
 
