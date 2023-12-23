@@ -28,8 +28,9 @@ class Train
     void getdata()
     {
         cout << "number\tname\tsource\tdestination\ttime\t" << endl;
-        cout << n << "\t" << name << "\t" << source << "\t" << des << "\t" << time << endl;
+        cout << n << "\t" << name << "\t" << source << "\t" << des << "\t" << time << endl << endl;
 
+        cout << "---------Train list--------" << endl;
         cout << "4077\tabc\tsurat to ahmedabad\t12:00" << endl;
         cout << "4078\tefg\tsurat to kach\t5:00" << endl;
         cout << "4079\tugt\tsurat to dwarka\t6:00" << endl;
