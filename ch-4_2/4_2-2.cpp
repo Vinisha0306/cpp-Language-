@@ -33,7 +33,7 @@ class D : public B,public C
     
     void sum()
     {
-        cout << "11 + 43 + 23 + 42 = " << a+b+c+d;
+        cout << "11 + 43 + 23 + 42 = " << B::a+b+c+d;
     }
 };
 

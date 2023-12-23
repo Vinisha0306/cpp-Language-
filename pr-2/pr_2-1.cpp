@@ -44,26 +44,29 @@ class Train
 
         if(number==4077)
         {
-            cout << "4077\tabc\tsurat to ahmedabad\t12:00" << endl;
+            cout << endl << endl <<"4077\tabc\tsurat to ahmedabad\t12:00" << endl;
         }
         else if(number==4078)
         {
-            cout << "4078\tefg\tsurat to kach\t5:00" << endl;
+            cout << endl << "4078\tefg\tsurat to kach\t5:00" << endl;
         }
         else if(number==4079)
         {
-            cout << "4079\tugt\tsurat to dwarka\t6:00" << endl;
+            cout << endl << "4079\tugt\tsurat to dwarka\t6:00" << endl;
         }
     }
 };
 
 int main()
 {
-    Train t1;
+    Train t1[3],t2;
 
-    t1.setdata();
-    t1.getdata();
-    t1.input();
+    for(int i=0;i<3;i++)
+    {
+        t1[3].setdata();
+        t1[3].getdata();
+    }
+    t2.input();
 
     return 0;
 }
