@@ -1,5 +1,3 @@
-// 
-// 
 #include<iostream>
 using namespace std;
 
@@ -24,7 +22,7 @@ class Q : public p
 
     void Fehrenheit()
     {
-        f=(9/5)*C + 32;
+        f=((float)9/5)*C + 32;
         cout << "Celsius to Fehrenheit: " << f << endl;
     }
 };
@@ -35,7 +33,7 @@ class R : public Q
 
     void kelvin()
     {
-        k=(5/9)*(f+459.67);
+        k=((float)5/9)*(f+459.67);
         cout << "Fehrenhrit to Kelvin: " << k << endl;
     }
 };

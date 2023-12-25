@@ -1,30 +1,43 @@
 #include<iostream>
-using namespace std;
+#include<string.h>
+using namespace std ;
 
-class Cricket
+class cricket
 {
     public:
-    void getTotalOvers()
+    
+    void totalover()
     {
-        cout << "Total over: 10" ;
+    cout << "Cricket";
     }
 };
 
-class T20Match : public Cricket
+class t20 : public cricket
+{   public:
+     
+    void totalover()
+    {
+    cout << "20 overs" << endl;
+    }
+};
+
+class testmatch: public cricket 
 {
     public:
-
-    void getTotalOvers()
+    
+    void totalover()
     {
-        cout << "Total over: 6" ;
-    }
+        cout << endl << "unlimited overs" << endl;
+    }    
 };
 
 int main()
 {
-    T20Match o1;
-
-    o1.getTotalOvers();
-
+    t20 c1;
+    testmatch c2;
+    
+    c1.totalover();
+    c2.totalover();
+    
     return 0;
 }
