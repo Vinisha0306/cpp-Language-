@@ -92,6 +92,7 @@ int main()
     
     supermarket s1;
     
+    
         s1.set_data();
         s1.output(id,password);
         s1.user_input();
