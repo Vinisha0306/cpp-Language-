@@ -16,10 +16,9 @@ class mes
     {
         cout << "first print:";
         return 12;
-        cout << "gfg";
     }
 
-    int print(char s1[20])
+    void print(char s1[20])
     {
         int a,b;
         char ns[a+b];
@@ -49,9 +48,7 @@ int main()
     char s1[20];
     cout << "Enter any string:";
     cin >> s1;
-    cout << "jhgfdck";
     m.print(s1);
-    cout << "0000flrhgvff"; 
 
     return 0;
 }
