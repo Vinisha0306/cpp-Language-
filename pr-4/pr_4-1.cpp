@@ -21,12 +21,12 @@ class mes
     void print(char s1[20])
     {
         int a,b;
-        char ns[a+b];
+        
         a=strlen(s);
         b=strlen(s1);
 
-        cout << "tjf";
-        
+        char ns[a+b];
+
         for(int i=0;i<a+b;i++)
         {
             ns[i]=s[i];
@@ -37,7 +37,7 @@ class mes
             ns[a+i]=s1[i];
         }
 
-       cout << endl << "Marge string :" << ns ;
+        cout << endl << "Marge string :" << ns ;
     }
 };
 
@@ -47,7 +47,7 @@ int main()
     char n[20];
     char s1[20];
     cout << "Enter any string:";
-    cin >> s1;
+    gets(s1);
     m.print(s1);
 
     return 0;
