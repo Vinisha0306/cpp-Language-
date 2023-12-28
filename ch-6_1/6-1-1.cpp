@@ -12,6 +12,7 @@ class Admin
     public:
          int employee_salary;
          char company_name[20];
+
 };
 
 class Manager : private Admin 
@@ -41,3 +42,9 @@ class Employee : public Manager
         cin >> cmp_name;
     }
 };
+
+int main()
+{
+    Manager m1;
+    Employee e1;
+}
