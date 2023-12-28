@@ -27,10 +27,13 @@ class Manager : private Admin
         int emp_salary;
         char cmp_name[20];
 
-    Manager()
+    void Manager1()
     {
-        emp_salary = employee_salary;
-        strcpy(cmp_name,company_name);
+        cout << "Enter employee salary:";
+        cin >> employee_salary;
+        
+        cout << "Enter company name:";
+        cin >> company_name;
     }
 }; 
 
@@ -47,4 +50,6 @@ int main()
 {
     Manager m1;
     Employee e1;
+
+    m1.Manager1();
 }
