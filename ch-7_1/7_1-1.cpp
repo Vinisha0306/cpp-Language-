@@ -76,39 +76,8 @@ class vote
 
 int main()
 {
-    // divide d1;
-    // vote v1;
-
-    char psw[20];
-    int a=0;
-    string str="your password is strong";
-
-    cout << "Enter password:";
-    cin >> psw;
-    
-    for(int i=0;psw[i]!=NULL;i++)
-    {
-        if(psw[i]>=65 && psw[i]>=90)
-        {
-            a++;
-        }
-    }
-
-    try
-    {
-        if(a>=1)
-        {
-            throw str;
-        }
-        else 
-        {
-            cout << "your password is not strong";
-        }
-    }
-    catch(string str)
-    {
-        cout << str;
-    }
+    divide d1;
+    vote v1;
     
     return 0;
 }
